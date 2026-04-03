@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project is a simple implementation of a cinema ticket booking service.
+This project is a **Java 21 implementation**  of a Cinema Ticket service.
 
 The goal is to take a ticket request, validate it based on business rules, calculate the total cost and number of seats, and then call external services to process payment and reserve seats.
 
@@ -37,13 +37,44 @@ The following rules are implemented:
 
 ---
 
+## Tech Stack
+
+- Java 21
+- Maven
+- JUnit 5
+- Mockito
+
+---
+
 ## Running the Project
 
-To run the tests:
+### 1. Clone the repository
+
+To clone the repository:
 
 ```bash
-mvn clean test
+git clone https://github.com/your-username/cinema-tickets.git
+cd cinema-tickets
 ```
+
+### 2. Build the project
+
+Run the Maven build to download dependencies and compile the code:
+
+```bash
+mvn clean install
+```
+
+### 3. Run Tests
+
+This project is a service layer implementation, so it is mainly tested via unit tests.
+You can validate functionality using:
+
+```bash
+mvn test
+```
+
+---
 
 ## Future Improvements
 
